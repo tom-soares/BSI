@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace View
 {
-    public partial class Form1 : Form
+    public partial class Cadastro : Form
     {
-        public Form1()
+        public Cadastro()
         {
             InitializeComponent();
+        }
+
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
