@@ -2,6 +2,6 @@
 
 Trabalhos dos alunos:
 
-Wellington Ricardo S. de Souza	e
+Wellington Ricardo S. de Souza	
 
 Guilherme Beneti
