@@ -1,4 +1,4 @@
-﻿namespace View
+﻿namespace ControleFinanceiro
 {
     partial class Cadastro
     {
@@ -28,30 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbox_cad_user = new System.Windows.Forms.TextBox();
+            this.tbox_cad_pass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbox_cad_email = new System.Windows.Forms.TextBox();
+            this.tbox_cad_saldo = new System.Windows.Forms.TextBox();
             this.btn_cadastro = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tbox_cad_user
             // 
-            this.textBox1.Location = new System.Drawing.Point(66, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 20);
-            this.textBox1.TabIndex = 0;
+            this.tbox_cad_user.Location = new System.Drawing.Point(66, 33);
+            this.tbox_cad_user.Name = "tbox_cad_user";
+            this.tbox_cad_user.Size = new System.Drawing.Size(196, 20);
+            this.tbox_cad_user.TabIndex = 0;
             // 
-            // textBox2
+            // tbox_cad_pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(66, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(196, 20);
-            this.textBox2.TabIndex = 1;
+            this.tbox_cad_pass.Location = new System.Drawing.Point(66, 74);
+            this.tbox_cad_pass.Name = "tbox_cad_pass";
+            this.tbox_cad_pass.Size = new System.Drawing.Size(196, 20);
+            this.tbox_cad_pass.TabIndex = 1;
             // 
             // label1
             // 
@@ -89,29 +89,29 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "E-mail:";
             // 
-            // textBox4
+            // tbox_cad_email
             // 
-            this.textBox4.Location = new System.Drawing.Point(66, 115);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(209, 20);
-            this.textBox4.TabIndex = 7;
+            this.tbox_cad_email.Location = new System.Drawing.Point(66, 115);
+            this.tbox_cad_email.Name = "tbox_cad_email";
+            this.tbox_cad_email.Size = new System.Drawing.Size(209, 20);
+            this.tbox_cad_email.TabIndex = 2;
             // 
-            // textBox3
+            // tbox_cad_saldo
             // 
-            this.textBox3.Location = new System.Drawing.Point(66, 156);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(111, 20);
-            this.textBox3.TabIndex = 11;
+            this.tbox_cad_saldo.Location = new System.Drawing.Point(66, 156);
+            this.tbox_cad_saldo.Name = "tbox_cad_saldo";
+            this.tbox_cad_saldo.Size = new System.Drawing.Size(111, 20);
+            this.tbox_cad_saldo.TabIndex = 3;
             // 
             // btn_cadastro
             // 
             this.btn_cadastro.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.btn_cadastro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_cadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_cadastro.Location = new System.Drawing.Point(138, 204);
+            this.btn_cadastro.Location = new System.Drawing.Point(146, 204);
             this.btn_cadastro.Name = "btn_cadastro";
             this.btn_cadastro.Size = new System.Drawing.Size(75, 23);
-            this.btn_cadastro.TabIndex = 12;
+            this.btn_cadastro.TabIndex = 4;
             this.btn_cadastro.Text = "Cadastrar";
             this.btn_cadastro.UseVisualStyleBackColor = false;
             // 
@@ -122,14 +122,14 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(365, 249);
             this.Controls.Add(this.btn_cadastro);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tbox_cad_saldo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbox_cad_email);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbox_cad_pass);
+            this.Controls.Add(this.tbox_cad_user);
             this.Name = "Cadastro";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cadastro";
@@ -141,14 +141,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbox_cad_user;
+        private System.Windows.Forms.TextBox tbox_cad_pass;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbox_cad_email;
+        private System.Windows.Forms.TextBox tbox_cad_saldo;
         private System.Windows.Forms.Button btn_cadastro;
     }
 }

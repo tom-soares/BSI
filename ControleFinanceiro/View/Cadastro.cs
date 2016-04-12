@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace View
+namespace ControleFinanceiro
 {
     public partial class Cadastro : Form
     {
@@ -19,7 +19,8 @@ namespace View
 
         private void Cadastro_Load(object sender, EventArgs e)
         {
-
+            Dashboard dashboard = new Dashboard();
+            dashboard.Visible = true;
         }
     }
 }

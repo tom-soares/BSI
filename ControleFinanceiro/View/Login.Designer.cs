@@ -1,4 +1,4 @@
-﻿namespace View
+﻿namespace ControleFinanceiro
 {
     partial class Login
     {
@@ -28,19 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tboxUser = new System.Windows.Forms.TextBox();
             this.btn_login = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tbox_pass = new System.Windows.Forms.TextBox();
+            this.link_cadastro = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tboxUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(67, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(178, 20);
-            this.textBox1.TabIndex = 0;
+            this.tboxUser.Location = new System.Drawing.Point(67, 35);
+            this.tboxUser.Name = "tboxUser";
+            this.tboxUser.Size = new System.Drawing.Size(178, 20);
+            this.tboxUser.TabIndex = 0;
             // 
             // btn_login
             // 
@@ -50,7 +51,7 @@
             this.btn_login.Location = new System.Drawing.Point(117, 124);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(75, 23);
-            this.btn_login.TabIndex = 1;
+            this.btn_login.TabIndex = 2;
             this.btn_login.Text = "Login";
             this.btn_login.UseVisualStyleBackColor = false;
             this.btn_login.Click += new System.EventHandler(this.btn_login_Click);
@@ -60,9 +61,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(29, 38);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 13);
+            this.label1.Size = new System.Drawing.Size(32, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "E-mail:";
+            this.label1.Text = "User:";
             // 
             // label2
             // 
@@ -73,12 +74,24 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Pass:";
             // 
-            // textBox2
+            // tbox_pass
             // 
-            this.textBox2.Location = new System.Drawing.Point(67, 79);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(178, 20);
-            this.textBox2.TabIndex = 4;
+            this.tbox_pass.Location = new System.Drawing.Point(67, 79);
+            this.tbox_pass.Name = "tbox_pass";
+            this.tbox_pass.Size = new System.Drawing.Size(178, 20);
+            this.tbox_pass.TabIndex = 1;
+            // 
+            // link_cadastro
+            // 
+            this.link_cadastro.AutoSize = true;
+            this.link_cadastro.LinkColor = System.Drawing.Color.SteelBlue;
+            this.link_cadastro.Location = new System.Drawing.Point(248, 143);
+            this.link_cadastro.Name = "link_cadastro";
+            this.link_cadastro.Size = new System.Drawing.Size(63, 13);
+            this.link_cadastro.TabIndex = 3;
+            this.link_cadastro.TabStop = true;
+            this.link_cadastro.Text = "Cadastre-se";
+            this.link_cadastro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_cadastro_LinkClicked);
             // 
             // Login
             // 
@@ -86,11 +99,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(316, 159);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.link_cadastro);
+            this.Controls.Add(this.tbox_pass);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_login);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tboxUser);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -102,11 +116,12 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tboxUser;
         private System.Windows.Forms.Button btn_login;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tbox_pass;
+        private System.Windows.Forms.LinkLabel link_cadastro;
     }
 }
 
